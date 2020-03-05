@@ -7,20 +7,25 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-	// bouncing squares 
-	square1.setSize(sf::Vector2f(50, 50));
-	square1.setCollisionBox(sf::FloatRect(0, 0, 50, 50));
-	square1.setPosition(0, 200);
-	square1.setVelocity(50, 0);
-	square1.setFillColor(sf::Color::Blue);
+	ballTexture.loadFromFile("gfx/Beach_Ball.png");
+	ball.setSize(sf::Vector2f(100, 100));
+	ball.setPosition(100, 100);
+	ball.setPosition(300, 300);
+	ball.setTexture(&ballTexture);
+	ball.setInput(input);
+	ball.setVelocity(100, 0);
 
-	square2.setSize(sf::Vector2f(50, 50));
-	square2.setCollisionBox(sf::FloatRect(0, 0, 50, 50));
-	square2.setPosition(750, 200);
-	square2.setVelocity(-50, 0);
-	square2.setFillColor(sf::Color::Green);
+	paddle1.setSize(sf::Vector2f(50, 200));
+	paddle1.setCollisionBox(sf::FloatRect(0, 0, 50, 200));
+	paddle1.setPosition(0, 0);
+	paddle1.setVelocity(50, 0);
+	paddle1.setFillColor(sf::Color::Red);
 
-	//
+	paddle2.setSize(sf::Vector2f(50, 200));
+	paddle2.setCollisionBox(sf::FloatRect(0, 0, 50, 200));
+	paddle2.setPosition(0, 0);
+	paddle2.setVelocity(50, 0);
+	paddle2.setFillColor(sf::Color::Red);
 }
 
 Level::~Level()
