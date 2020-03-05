@@ -45,6 +45,12 @@
     <ClCompile Include="Ball2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Square1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Square2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -77,6 +83,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Ball2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Square1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Square2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
