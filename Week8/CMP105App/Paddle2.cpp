@@ -16,7 +16,7 @@ Paddle2::~Paddle2()
 
 void Paddle2::handleInput(float dt)
 {
-
+	/
 }
 
 void Paddle2::update(float dt)
