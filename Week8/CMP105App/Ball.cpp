@@ -3,14 +3,9 @@
 
 Ball::Ball()
 {
-	
-
-	
-
 	// Init input component
 	input = nullptr;
 
-	
 }
 
 Ball::~Ball()
