@@ -4,8 +4,8 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
-#include "Ball.h"
-#include "Ball2.h"
+#include "Square1.h"
+#include "Square1.h"
 
 
 class Level{

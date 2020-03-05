@@ -64,6 +64,8 @@ void Level::render()
 	/*window->draw(ball);
 	window->draw(ball2);*/
 
+	window->draw(square1);
+	window->draw(square2);
 	endDraw();
 }
 
