@@ -4,8 +4,9 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
-#include "Square1.h"
-#include "Square2.h"
+#include "Paddle1.h"
+#include "Paddle2.h"
+#include "Ball.h"
 
 
 class Level{
@@ -26,10 +27,11 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
-	/*Ball ball;
-	Ball2 ball2;
-	sf::Texture ballTexture;*/
+	Ball ball;
+	//Ball2 ball2;
+	sf::Texture ballTexture;
 
-	Square1 square1;
-	Square2 square2;
+	Paddle1 paddle1;
+	Paddle2 paddle2;
+	
 };
