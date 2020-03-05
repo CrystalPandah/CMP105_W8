@@ -5,7 +5,7 @@
 #include <string>
 #include <iostream>
 #include "Square1.h"
-#include "Square1.h"
+#include "Square2.h"
 
 
 class Level{
