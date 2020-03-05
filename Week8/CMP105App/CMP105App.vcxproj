@@ -166,6 +166,8 @@
     <ClCompile Include="Framework\Vector.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Paddle1.cpp" />
+    <ClCompile Include="Paddle2.cpp" />
     <ClCompile Include="Square1.cpp" />
     <ClCompile Include="Square2.cpp" />
   </ItemGroup>
@@ -182,6 +184,8 @@
     <ClInclude Include="Framework\GameObject.h" />
     <ClInclude Include="Framework\Vector.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="Paddle1.h" />
+    <ClInclude Include="Paddle2.h" />
     <ClInclude Include="Square1.h" />
     <ClInclude Include="Square2.h" />
   </ItemGroup>

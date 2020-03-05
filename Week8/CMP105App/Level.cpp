@@ -42,22 +42,24 @@ void Level::handleInput(float dt)
 // Update game objects
 void Level::update(float dt)
 {
-	square1.update(dt);
-	square2.update(dt);
+	paddle1.update(dt);
+	paddle2.update(dt);
+	ball.update(dt);
 
-	if (Collision::checkBoundingBox(&square1, &square2))
+	//check collisions between each paddle and the ball
+	if (Collision::checkBoundingBox(&paddle1, &ball))
 	{
-		square1.collisionResponse(NULL);
-		square2.collisionResponse(NULL);
-	}
-	/*ball.update(dt);
-	ball2.update(dt);
-	if (Collision::checkBoundingCircle(&ball, &ball2))
-	{
+		paddle1.collisionResponse(NULL);
 		ball.collisionResponse(NULL);
-		ball2.collisionResponse(NULL);
-
-	}*/
+	}
+	if (Collision::checkBoundingBox(&paddle2, &ball))
+	{
+		paddle2.collisionResponse(NULL);
+		ball.collisionResponse(NULL);
+	}
+	
+	
+	
 		
 		
 }
@@ -69,8 +71,9 @@ void Level::render()
 	/*window->draw(ball);
 	window->draw(ball2);*/
 
-	window->draw(square1);
-	window->draw(square2);
+	window->draw(paddle1);
+	window->draw(paddle2);
+	window->draw(ball);
 	endDraw();
 }
 
