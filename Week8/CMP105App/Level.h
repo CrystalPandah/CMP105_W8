@@ -4,6 +4,8 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
+#include "Ball.h"
+#include "Ball2.h"
 
 
 class Level{
@@ -23,4 +25,8 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	Ball ball;
+	Ball2 ball2;
+	sf::Texture ballTexture;
 };
