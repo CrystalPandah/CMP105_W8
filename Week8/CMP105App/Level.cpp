@@ -22,6 +22,8 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	ball2.setVelocity(-100, 0);
 }
 
+//
+
 Level::~Level()
 {
 
