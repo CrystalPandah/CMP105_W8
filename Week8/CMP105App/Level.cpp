@@ -12,15 +12,15 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	square1.setCollisionBox(sf::FloatRect(0, 0, 50, 50));
 	square1.setPosition(0, 200);
 	square1.setVelocity(50, 0);
-	suqare1.setFillColor(sf::Color::Blue);
+	square1.setFillColor(sf::Color::Blue);
 
 	square2.setSize(sf::Vector2f(50, 50));
 	square2.setCollisionBox(sf::FloatRect(0, 0, 50, 50));
 	square2.setPosition(750, 200);
 	square2.setVelocity(-50, 0);
-	suqare2.setFillColor(sf::Color::Green);
+	square2.setFillColor(sf::Color::Green);
 
-	/
+	
 }
 
 Level::~Level()
