@@ -1,25 +1,25 @@
 #include "Paddle2.h"
 
 
-Paddle1::Paddle1()
+Paddle2::Paddle1()
 {
 	// Init input component
 	input = nullptr;
 
 }
 
-Paddle1::~Paddle1()
+Paddle2::~Paddle1()
 {
 	input = nullptr;
 }
 
 
-void Paddle1::handleInput(float dt)
+void Paddle2::handleInput(float dt)
 {
 
 }
 
-void Paddle1::update(float dt)
+void Paddle2::update(float dt)
 {
 	move(velocity * dt);
 
@@ -35,7 +35,7 @@ void Paddle1::update(float dt)
 	}
 }
 
-void Paddle1::collisionResponse(GameObject* collider)
+void Paddle2::collisionResponse(GameObject* collider)
 {
 	velocity.x = -velocity.x;
 }
