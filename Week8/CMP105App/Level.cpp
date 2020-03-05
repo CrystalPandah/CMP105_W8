@@ -20,7 +20,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	square2.setVelocity(-50, 0);
 	suqare2.setFillColor(sf::Color::Green);
 
-
+	/
 }
 
 Level::~Level()
