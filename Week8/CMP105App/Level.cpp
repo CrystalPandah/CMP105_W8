@@ -36,6 +36,8 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
+	paddle1.handleInput(dt);
+	paddle2.handleInput(dt);
 
 }
 
