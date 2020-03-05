@@ -15,7 +15,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 
 	ballTexture.loadFromFile("gfx/Beach_Ball.png");
 	ball2.setSize(sf::Vector2f(100, 100));
-	ball2.setPosition(100, 150);
+	ball2.setPosition(100, 200);
 	ball2.setTexture(&ballTexture);
 	ball2.setInput(input);
 }
