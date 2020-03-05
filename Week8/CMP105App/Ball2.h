@@ -14,7 +14,7 @@ public:
 	void update(float dt);
 
 	//void collisionResponse(GameObject* collider);
-
+	/
 protected:
 
 
