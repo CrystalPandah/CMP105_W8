@@ -16,6 +16,25 @@ Paddle1::~Paddle1()
 
 void Paddle1::handleInput(float dt)
 {
+	if (input->isKeyDown(sf::Keyboard::Up) && !input->isKeyDown(sf::Keyboard::Down))
+	{
+		//Update x velocity
+		velocity.x = 70;
+
+		
+	}
+	else if (input->isKeyDown(sf::Keyboard::Down) && !input->isKeyDown(sf::Keyboard::Up))
+	{
+		//Update x velocity
+		velocity.x = -70;
+
+		
+	}
+	else
+	{
+		//Update x velocity
+		velocity.x = 0;
+	}
 
 }
 
