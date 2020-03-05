@@ -13,7 +13,7 @@ public:
 	void handleInput(float dt);
 	void update(float dt);
 
-	void collisionResponse(GameObject* collider);
+	//void collisionResponse(GameObject* collider);
 
 protected:
 	
