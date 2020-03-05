@@ -7,22 +7,21 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-	ballTexture.loadFromFile("gfx/Beach_Ball.png");
-	ball.setSize(sf::Vector2f(100, 100));
-	ball.setPosition(300, 300);
-	ball.setTexture(&ballTexture);
-	ball.setInput(input);
-	ball.setVelocity(100, 0);
+	// bouncing squares 
+	square1.setSize(sf::Vector2f(50, 50));
+	square1.setCollisionBox(sf::FloatRect(0, 0, 50, 50));
+	square1.setPosition(0, 200);
+	square1.setVelocity(50, 0);
+	suqare1.setFillColor(sf::Color::Blue);
 
-	//ballTexture.loadFromFile("gfx/Beach_Ball.png");
-	ball2.setSize(sf::Vector2f(100, 100));
-	ball2.setPosition(800, 300);
-	ball2.setTexture(&ballTexture);
-	ball2.setInput(input);
-	ball2.setVelocity(-100, 0);
+	square2.setSize(sf::Vector2f(50, 50));
+	square2.setCollisionBox(sf::FloatRect(0, 0, 50, 50));
+	square2.setPosition(750, 200);
+	square2.setVelocity(-50, 0);
+	suqare2.setFillColor(sf::Color::Green);
+
+
 }
-
-//
 
 Level::~Level()
 {
@@ -38,14 +37,22 @@ void Level::handleInput(float dt)
 // Update game objects
 void Level::update(float dt)
 {
-	ball.update(dt);
+	square1.update(dt);
+	square2.update(dt);
+
+	if (Collision::checkBoundingBox(&square1, &square2))
+	{
+		square1.collisionResponse(NULL);
+		square2.collisionResponse(NULL);
+	}
+	/*ball.update(dt);
 	ball2.update(dt);
 	if (Collision::checkBoundingCircle(&ball, &ball2))
 	{
 		ball.collisionResponse(NULL);
 		ball2.collisionResponse(NULL);
 
-	}
+	}*/
 		
 		
 }
@@ -54,8 +61,8 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-	window->draw(ball);
-	window->draw(ball2);
+	/*window->draw(ball);
+	window->draw(ball2);*/
 
 	endDraw();
 }

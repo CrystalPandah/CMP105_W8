@@ -26,7 +26,10 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
-	Ball ball;
+	/*Ball ball;
 	Ball2 ball2;
-	sf::Texture ballTexture;
+	sf::Texture ballTexture;*/
+
+	Square1 square1;
+	Square2 square2;
 };
