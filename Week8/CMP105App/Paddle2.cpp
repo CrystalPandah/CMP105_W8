@@ -1,14 +1,14 @@
 #include "Paddle2.h"
 
 
-Paddle2::Paddle1()
+Paddle2::Paddle2()
 {
 	// Init input component
 	input = nullptr;
 
 }
 
-Paddle2::~Paddle1()
+Paddle2::~Paddle2()
 {
 	input = nullptr;
 }
