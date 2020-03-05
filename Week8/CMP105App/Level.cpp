@@ -7,7 +7,17 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
+	ballTexture.loadFromFile("gfx/Beach_Ball.png");
+	ball.setSize(sf::Vector2f(100, 100));
+	ball.setPosition(100, 100);
+	ball.setTexture(&ballTexture);
+	ball.setInput(input);
 
+	ballTexture.loadFromFile("gfx/Beach_Ball.png");
+	ball2.setSize(sf::Vector2f(100, 100));
+	ball2.setPosition(100, 150);
+	ball2.setTexture(&ballTexture);
+	ball2.setInput(input);
 }
 
 Level::~Level()
